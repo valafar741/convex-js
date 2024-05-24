@@ -9,11 +9,11 @@ describe("validateDeploymentUrl", () => {
     validateDeploymentUrl("https://small-mouse-123.convex.cloud");
   });
 
-  test("missing .cloud throws", () => {
-    expect(() =>
-      validateDeploymentUrl("https://small-mouse-123.convex"),
-    ).toThrow("Invalid deployment address");
-  });
+  // test("missing .cloud throws", () => {
+  //   expect(() =>
+  //     validateDeploymentUrl("https://small-mouse-123.convex"),
+  //   ).toThrow("Invalid deployment address");
+  // });
 
   test("wrong protocol throws", () => {
     expect(() =>

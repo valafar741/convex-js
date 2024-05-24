@@ -50,7 +50,7 @@ export function validateDeploymentUrl(deploymentUrl: string) {
   }
 
   if (
-    !deploymentUrl.endsWith(".convex.cloud") &&
+    // !deploymentUrl.endsWith(".convex.cloud") &&
     !deploymentUrl.includes("0.0.0.0")
   ) {
     throw new Error(
